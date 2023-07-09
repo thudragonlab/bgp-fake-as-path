@@ -1,0 +1,8 @@
+tmp
+**/__pycache__
+db_config.json
+log.txt
+data/topo/tmp/*
+**/event_list.csv
+event1_list.jsonl
+event2_list.jsonl

@@ -1,0 +1,62 @@
+2021-11-01
+获取历史链路集中...2021-11-01
+数据集准备...
+所有link: (250000, 2)
+训练集link: (200000, 2)
+测试集link: (50000, 2)
+====== begin of gnn configuration ======
+| msg_average = 0
+======   end of gnn configuration ======
+Namespace(all_unknown_as_negative=False, batch_size=50, cuda=False, data_name=None, hop=1, max_nodes_per_hop=300, max_train_num=80000, no_cuda=False, no_parallel=False, only_predict=False, pred_path=None, sample_ratio=1, save_model=True, seed=1, test_name=None, test_path='/home/zhangcw07/paper/fireye+/zcw+/data/topo/2021-11-01/2021-11-01_test.txt', test_ratio=0.2, train_name=None, train_path='/home/zhangcw07/paper/fireye+/zcw+/data/topo/2021-11-01/2021-11-01_train.txt', use_attribute=False, use_embedding=False)
+2021-11-01
+/home/zhangcw07/paper/fireye+/zcw+/data/topo/2021-11-01/2021-11-01_test.txt
+----------------------------------------
+(array([  0,   0,   7, ..., 196, 196, 196]), array([    1,     6,     9, ..., 14987,  2810,  2811]))
+[[    0     1]
+ [    0     6]
+ [    7     9]
+ ...
+ [  196 14987]
+ [  196  2810]
+ [  196  2811]]
+max_idx: 55740
+sampling negative links for train and test
+train links:  80000 80000
+test links:  50000 50000
+links num:400000
+Enclosing subgraph extraction begins...
+  0%|          | 0/128 [00:00<?, ?it/s]  0%|          | 0/128 [00:01<?, ?it/s]  0%|          | 0/128 [00:02<?, ?it/s]  0%|          | 0/128 [00:03<?, ?it/s]  0%|          | 0/128 [00:04<?, ?it/s]  0%|          | 0/128 [00:05<?, ?it/s]  0%|          | 0/128 [00:06<?, ?it/s]  0%|          | 0/128 [00:07<?, ?it/s]  0%|          | 0/128 [00:08<?, ?it/s]  0%|          | 0/128 [00:09<?, ?it/s]  0%|          | 0/128 [00:10<?, ?it/s]  0%|          | 0/128 [00:11<?, ?it/s]  0%|          | 0/128 [00:12<?, ?it/s]  0%|          | 0/128 [00:13<?, ?it/s]  0%|          | 0/128 [00:14<?, ?it/s]  0%|          | 0/128 [00:15<?, ?it/s]  0%|          | 0/128 [00:16<?, ?it/s]  0%|          | 0/128 [00:17<?, ?it/s]  0%|          | 0/128 [00:18<?, ?it/s]  0%|          | 0/128 [00:19<?, ?it/s]  0%|          | 0/128 [00:20<?, ?it/s]  0%|          | 0/128 [00:21<?, ?it/s]  0%|          | 0/128 [00:22<?, ?it/s]  0%|          | 0/128 [00:23<?, ?it/s]  0%|          | 0/128 [00:24<?, ?it/s]  0%|          | 0/128 [00:25<?, ?it/s]  0%|          | 0/128 [00:26<?, ?it/s]  0%|          | 0/128 [00:27<?, ?it/s]  0%|          | 0/128 [00:28<?, ?it/s]  0%|          | 0/128 [00:29<?, ?it/s]  0%|          | 0/128 [00:30<?, ?it/s]  0%|          | 0/128 [00:31<?, ?it/s]  0%|          | 0/128 [00:32<?, ?it/s]  0%|          | 0/128 [00:33<?, ?it/s]  0%|          | 0/128 [00:34<?, ?it/s]  0%|          | 0/128 [00:35<?, ?it/s]  0%|          | 0/128 [00:36<?, ?it/s]  0%|          | 0/128 [00:37<?, ?it/s]  0%|          | 0/128 [00:38<?, ?it/s]  0%|          | 0/128 [00:39<?, ?it/s]  0%|          | 0/128 [00:40<?, ?it/s]  0%|          | 0/128 [00:41<?, ?it/s]  0%|          | 0/128 [00:42<?, ?it/s]  0%|          | 0/128 [00:43<?, ?it/s]  0%|          | 0/128 [00:44<?, ?it/s]  0%|          | 0/128 [00:45<?, ?it/s]  0%|          | 0/128 [00:46<?, ?it/s]  0%|          | 0/128 [00:47<?, ?it/s]  0%|          | 0/128 [00:48<?, ?it/s]  0%|          | 0/128 [00:49<?, ?it/s]  0%|          | 0/128 [00:50<?, ?it/s]  0%|          | 0/128 [00:51<?, ?it/s]  0%|          | 0/128 [00:52<?, ?it/s]  0%|          | 0/128 [00:53<?, ?it/s]  0%|          | 0/128 [00:54<?, ?it/s]  0%|          | 0/128 [00:55<?, ?it/s]  0%|          | 0/128 [00:56<?, ?it/s]  0%|          | 0/128 [00:57<?, ?it/s]  0%|          | 0/128 [00:58<?, ?it/s]  0%|          | 0/128 [00:59<?, ?it/s]  0%|          | 0/128 [01:00<?, ?it/s]  0%|          | 0/128 [01:01<?, ?it/s]  0%|          | 0/128 [01:02<?, ?it/s]  0%|          | 0/128 [01:03<?, ?it/s]  0%|          | 0/128 [01:04<?, ?it/s]  0%|          | 0/128 [01:05<?, ?it/s]  0%|          | 0/128 [01:06<?, ?it/s]  0%|          | 0/128 [01:07<?, ?it/s]  0%|          | 0/128 [01:08<?, ?it/s]  0%|          | 0/128 [01:09<?, ?it/s]  0%|          | 0/128 [01:10<?, ?it/s]  0%|          | 0/128 [01:11<?, ?it/s]  0%|          | 0/128 [01:12<?, ?it/s]  0%|          | 0/128 [01:13<?, ?it/s]  0%|          | 0/128 [01:14<?, ?it/s]  0%|          | 0/128 [01:15<?, ?it/s]  0%|          | 0/128 [01:16<?, ?it/s]  0%|          | 0/128 [01:17<?, ?it/s]  0%|          | 0/128 [01:18<?, ?it/s]  0%|          | 0/128 [01:19<?, ?it/s]  0%|          | 0/128 [01:20<?, ?it/s]  0%|          | 0/128 [01:21<?, ?it/s]  0%|          | 0/128 [01:22<?, ?it/s]  0%|          | 0/128 [01:23<?, ?it/s]  0%|          | 0/128 [01:24<?, ?it/s]  0%|          | 0/128 [01:25<?, ?it/s]  0%|          | 0/128 [01:26<?, ?it/s]  0%|          | 0/128 [01:27<?, ?it/s]  0%|          | 0/128 [01:28<?, ?it/s]  0%|          | 0/128 [01:29<?, ?it/s]  0%|          | 0/128 [01:30<?, ?it/s]  0%|          | 0/128 [01:31<?, ?it/s]  0%|          | 0/128 [01:32<?, ?it/s]  0%|          | 0/128 [01:33<?, ?it/s]  0%|          | 0/128 [01:34<?, ?it/s]  0%|          | 0/128 [01:35<?, ?it/s]  0%|          | 0/128 [01:36<?, ?it/s]  0%|          | 0/128 [01:37<?, ?it/s]  0%|          | 0/128 [01:38<?, ?it/s]  0%|          | 0/128 [01:39<?, ?it/s]  0%|          | 0/128 [01:40<?, ?it/s]  0%|          | 0/128 [01:41<?, ?it/s]  0%|          | 0/128 [01:42<?, ?it/s]  0%|          | 0/128 [01:43<?, ?it/s]  0%|          | 0/128 [01:44<?, ?it/s]  0%|          | 0/128 [01:45<?, ?it/s]  0%|          | 0/128 [01:46<?, ?it/s]  0%|          | 0/128 [01:47<?, ?it/s]  0%|          | 0/128 [01:48<?, ?it/s]  0%|          | 0/128 [01:49<?, ?it/s]  0%|          | 0/128 [01:50<?, ?it/s]  0%|          | 0/128 [01:51<?, ?it/s]  0%|          | 0/128 [01:52<?, ?it/s]  0%|          | 0/128 [01:53<?, ?it/s]  0%|          | 0/128 [01:54<?, ?it/s]  0%|          | 0/128 [01:55<?, ?it/s]  0%|          | 0/128 [01:56<?, ?it/s]  0%|          | 0/128 [01:57<?, ?it/s]  0%|          | 0/128 [01:58<?, ?it/s]  0%|          | 0/128 [01:59<?, ?it/s]  0%|          | 0/128 [02:00<?, ?it/s]  0%|          | 0/128 [02:01<?, ?it/s]  0%|          | 0/128 [02:02<?, ?it/s]  0%|          | 0/128 [02:03<?, ?it/s]  0%|          | 0/128 [02:04<?, ?it/s]  0%|          | 0/128 [02:05<?, ?it/s]  0%|          | 0/128 [02:06<?, ?it/s]  0%|          | 0/128 [02:07<?, ?it/s]  0%|          | 0/128 [02:08<?, ?it/s]  0%|          | 0/128 [02:09<?, ?it/s]  0%|          | 0/128 [02:10<?, ?it/s]  0%|          | 0/128 [02:11<?, ?it/s]  0%|          | 0/128 [02:12<?, ?it/s]  0%|          | 0/128 [02:13<?, ?it/s]  0%|          | 0/128 [02:14<?, ?it/s]  0%|          | 0/128 [02:15<?, ?it/s]  0%|          | 0/128 [02:16<?, ?it/s]  0%|          | 0/128 [02:17<?, ?it/s]  0%|          | 0/128 [02:18<?, ?it/s]  0%|          | 0/128 [02:19<?, ?it/s]  0%|          | 0/128 [02:20<?, ?it/s]  0%|          | 0/128 [02:21<?, ?it/s]  0%|          | 0/128 [02:22<?, ?it/s]  0%|          | 0/128 [02:23<?, ?it/s]  0%|          | 0/128 [02:24<?, ?it/s]  0%|          | 0/128 [02:25<?, ?it/s]  0%|          | 0/128 [02:26<?, ?it/s]  0%|          | 0/128 [02:27<?, ?it/s]  0%|          | 0/128 [02:28<?, ?it/s]  0%|          | 0/128 [02:29<?, ?it/s]  0%|          | 0/128 [02:30<?, ?it/s]  0%|          | 0/128 [02:31<?, ?it/s]  0%|          | 0/128 [02:32<?, ?it/s]  0%|          | 0/128 [02:33<?, ?it/s]  0%|          | 0/128 [02:34<?, ?it/s]  0%|          | 0/128 [02:35<?, ?it/s]  0%|          | 0/128 [02:36<?, ?it/s]  0%|          | 0/128 [02:37<?, ?it/s]  0%|          | 0/128 [02:38<?, ?it/s]  0%|          | 0/128 [02:39<?, ?it/s]  0%|          | 0/128 [02:40<?, ?it/s]  0%|          | 0/128 [02:41<?, ?it/s]  0%|          | 0/128 [02:42<?, ?it/s]  0%|          | 0/128 [02:43<?, ?it/s]  0%|          | 0/128 [02:44<?, ?it/s]  0%|          | 0/128 [02:45<?, ?it/s]Traceback (most recent call last):
+  File "Main.py", line 216, in <module>
+    train_graphs, test_graphs, max_n_label = links2subgraphs(
+  File "/home/zhangcw07/paper/fireye+/zcw+/SEAL/Python/util_functions.py", line 132, in links2subgraphs
+    train_graphs = helper(A, train_pos, 1) + helper(A, train_neg, 0)
+  File "/home/zhangcw07/paper/fireye+/zcw+/SEAL/Python/util_functions.py", line 117, in helper
+    time.sleep(1)
+KeyboardInterrupt
+Error in atexit._run_exitfuncs:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/usr/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/usr/lib/python3.8/multiprocessing/pool.py", line 729, in _terminate_pool
+    p.join()
+  File "/usr/lib/python3.8/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.8/multiprocessing/popen_fork.py", line 47, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.8/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "detect_simulation", line 23, in <module>
+    irr_as_dict = json.load(fp) 
+  File "/usr/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/usr/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.8/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+KeyboardInterrupt
