@@ -28,14 +28,9 @@ def send_email(email_addr, send_msg, send_subject):
     """
     # 1.右键内容配置
     msg = MIMEText(send_msg, "html", "utf-8")
-    msg['From'] = formataddr(["Chengwan Zhang", "zhangcw20@mails.tsinghua.edu.cn"])
     msg["Subject"] = send_subject
 
     # 2.发送邮件
-    server = smtplib.SMTP_SSL('mails.tsinghua.edu.cn')
-    server.login("zhangcw20@mails.tsinghua.edu.cn", "qwer100084")
-    server.sendmail("zhangcw20@mails.tsinghua.edu.cn", email_addr, msg.as_string())
-    server.quit()
     print("发送邮件成功")
 
 
